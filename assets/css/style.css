@@ -52,7 +52,7 @@ nav {
   border: 0.1em solid #ff9100;
 }
 
-#about-me {
+#about-me, #contact-me {
   font-family: 'Knewave', cursive;
 }
 
@@ -67,6 +67,33 @@ nav {
 .about-paragraph {
   font-size: 1em;
   font-family: 'Roboto', sans-serif;
+}
+
+.contact-row {
+  font-size: 1em;
+  font-family: 'Knewave', cursive;
+  margin: 0.1em 0 0.1em;
+}
+
+.input {
+  width: 100%;
+  background: #38383c;
+  border-style: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+#submit-btn {
+  color: #212121;
+  background: white;
+  border-radius: 10px;
+  border-color: white;
+  border-style: none;
+  font-size: 1.5em;
+  padding:5px 8px;
+  font-family: 'Knewave', cursive;
+} #submit-btn:hover {
+  background-color: #ff9100;
 }
 
 .social-media-container {

@@ -1,17 +1,37 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
-  margin: 0;
-  background: #444444;
+  margin: 0 0 100px;
+  background: #38383c;
 }
 
 nav {
   padding: 1em 4em 1em 4em;
-  background: #303034;
-  border-bottom: 0.1em solid #fd9700;
+  background: #212121;
+  border-bottom: 0.1em solid #ff9100;
+}
+
+#nav-logo {
+  font-family: 'Knewave', cursive;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+} #nav-logo:hover {
+  color: #ff9100;
 }
 
 .nav-item {
   float: right;
   margin: 0 1em;
+  font-family: 'Knewave', cursive;
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+} .nav-item:hover {
+  color: #ff9100;
 }
 
 .container {
@@ -22,34 +42,40 @@ nav {
 
 .main-section {
   color: white;
-  background: #303034;
+  background: #212121;
   border-radius: 10px;
   float: left;
   width: 70%;
   padding: 1em 1em 1em 1em;
   margin: 1em 1em 1em 1em;
   font-size: 17px;
-  border: 0.1em solid #fd9700;
+  border: 0.1em solid #ff9100;
+}
+
+#about-me {
+  font-family: 'Knewave', cursive;
 }
 
 .about-paragraph {
-  font-size: 1em;
+  font-size: 0.8em;
+  font-family: 'Droid Sans', sans-serif;
 }
 
 .social-media-container {
   color: white;
-  background:#303034;
+  background:#212121;
   border-radius 10px;
   width: 20%;
   float: left;
   margin: 1em 1em 1em 1em;
   padding: 1em 1em 1em 1em;
   border-radius: 10px;
-  border: 0.1em solid #fd9700;
+  border: 0.1em solid #ff9100;
 }
 
 #social-media-title {
   font-size: 1.3em;
+  font-family: 'Knewave', cursive;
   margin: 0;
 }
 
@@ -57,14 +83,19 @@ footer {
   clear: both;
   overflow: auto;
   text-align: center;
-  background: #303034;
+  background: #212121;
   color: white;
   padding: 20px 0 20px 0;
+  border-top: 0.5em solid #ff9100;
+  position: absolute;
+  left: 0;
+  bottom: 0;
   width: 100%;
-  border-top: 0.5em solid #fd9700;
+  height: 30px;
 }
 
 #copyright {
   margin: 0;
-  font-size: 1em
+  font-size: 1em;
+  font-family: 'Knewave', cursive;
 }

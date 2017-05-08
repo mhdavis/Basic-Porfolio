@@ -34,7 +34,7 @@ nav {
   color: #ff9100;
 }
 
-.container {
+#container {
   margin: 2em 3em 2em 3em;
   clear: both;
   overflow: auto;
@@ -45,7 +45,7 @@ nav {
   background: #212121;
   border-radius: 10px;
   float: left;
-  width: 70%;
+  width: 50%;
   padding: 1em 1em 1em 1em;
   margin: 1em 1em 1em 1em;
   font-size: 17px;
@@ -56,27 +56,47 @@ nav {
   font-family: 'Knewave', cursive;
 }
 
+#profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 10%;
+  float: left;
+  margin: 0.5em 0.5em 0.5em 0;
+}
+
 .about-paragraph {
-  font-size: 0.8em;
-  font-family: 'Droid Sans', sans-serif;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
 }
 
 .social-media-container {
   color: white;
   background:#212121;
   border-radius 10px;
-  width: 20%;
+  width: 15%;
   float: left;
   margin: 1em 1em 1em 1em;
   padding: 1em 1em 1em 1em;
   border-radius: 10px;
   border: 0.1em solid #ff9100;
+  text-align: center;
 }
 
 #social-media-title {
   font-size: 1.3em;
   font-family: 'Knewave', cursive;
   margin: 0;
+}
+
+.social-btn {
+  font-size: 3em;
+  margin: 10px;
+}
+
+.social-anchor {
+    color: white;
+}.social-anchor:hover {
+  color: #ff9100;
 }
 
 footer {

@@ -9,6 +9,7 @@ body {
 }
 
 nav {
+  width: auto;
   padding: 1em 4em 1em 4em;
   background: #212121;
   border-bottom: 0.1em solid #ff9100;
@@ -35,12 +36,13 @@ nav {
 }
 
 #container {
-  margin: 2em 3em 2em 3em;
+  margin: 0px auto;
+  width: 960px;
   clear: both;
   overflow: auto;
 }
 
-.main-section {
+#main-section {
   color: white;
   background: #212121;
   border-radius: 10px;
@@ -96,11 +98,11 @@ nav {
   background-color: #ff9100;
 }
 
-.social-media-container {
+#social-media-container {
   color: white;
   background:#212121;
   border-radius 10px;
-  width: 15%;
+  width: 20%;
   float: left;
   margin: 1em 1em 1em 1em;
   padding: 1em 1em 1em 1em;
@@ -145,4 +147,15 @@ footer {
   margin: 0;
   font-size: 1em;
   font-family: 'Knewave', cursive;
+}
+
+@media only screen and (max-width: 1000px) {
+  #main-section {
+    width: 50%;
+  }
+
+  #social-media-container {
+    width: 50%;
+
+  }
 }

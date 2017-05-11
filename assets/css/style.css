@@ -9,37 +9,46 @@ body {
 }
 
 nav {
-  width: auto;
-  padding: 1em 4em 1em 4em;
   background: #212121;
   border-bottom: 0.1em solid #ff9100;
 }
 
-#nav-logo {
+.clearfix {
+  clear: both;
+  overflow: auto;
+}
+
+.topnav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav-style {
+  display: block;
+  text-decoration: none;
   font-family: 'Knewave', cursive;
   color: white;
-  text-decoration: none;
   font-size: 1.5em;
-} #nav-logo:hover {
+} .nav-style:hover {
   color: #ff9100;
+}
+
+#nav-logo {
+  float: left;
+  padding: 1em 1em;
 }
 
 .nav-item {
   float: right;
-  margin: 0 1em;
-  font-family: 'Knewave', cursive;
-  font-size: 1.5em;
-  color: white;
-  text-decoration: none;
+  padding: 1em 1em;
 } .nav-item:hover {
-  color: #ff9100;
+  background: #151515;
 }
 
 #container {
-  margin: 0px auto;
-  width: 960px;
-  clear: both;
-  overflow: auto;
+  margin: 0px 10%;
 }
 
 #main-section {
@@ -60,10 +69,9 @@ nav {
 
 #profile-pic {
   width: 150px;
-  height: 150px;
   border-radius: 10%;
   float: left;
-  margin: 0.5em 0.5em 0.5em 0;
+  margin: 0.9em 0.9em 0.9em 0;
 }
 
 .about-paragraph {
@@ -102,7 +110,7 @@ nav {
   color: white;
   background:#212121;
   border-radius 10px;
-  width: 20%;
+  width: 25%;
   float: left;
   margin: 1em 1em 1em 1em;
   padding: 1em 1em 1em 1em;
@@ -129,8 +137,6 @@ nav {
 }
 
 footer {
-  clear: both;
-  overflow: auto;
   text-align: center;
   background: #212121;
   color: white;
@@ -151,11 +157,35 @@ footer {
 
 @media only screen and (max-width: 1000px) {
   #main-section {
-    width: 50%;
+    width: 75%;
   }
 
   #social-media-container {
-    width: 50%;
+    width: 75%;
 
+  }
+}
+
+@media only screen and (max-width: 680px) {
+    #nav-logo {
+      padding: 0;
+      float: none;
+      text-align: center;
+      color: #212121;
+      background: #ff9100;
+    }#nav-logo:hover {
+      color: white;
+    }
+
+    .nav-item {
+      padding: 0;
+      float: none;
+      text-align: center;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+  #profile-pic {
+    width: 180px;
   }
 }

@@ -43,8 +43,12 @@ nav {
 .nav-item {
   float: right;
   padding: 1em 1em;
+  box-shadow:inset 0 0 0 0 #151515;
+  -webkit-transition: -webkit-box-shadow 300ms ease-in-out;
+  -moz-transition: -moz-box-shadow 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out;
 } .nav-item:hover {
-  background: #151515;
+  box-shadow:inset 0 100px 0 0 #151515;
 }
 
 #container {
@@ -67,8 +71,18 @@ nav {
   font-family: 'Knewave', cursive;
 }
 
+
+#profile-wrapper {
+    width: 50%
+}
+
 #profile-pic {
-  width: 150px;
+  background-image: url('../images/profile_image.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  padding-bottom: 100%;
+  width: 100%;
   border-radius: 10%;
   float: left;
   margin: 0.9em 0.9em 0.9em 0;
@@ -91,7 +105,11 @@ nav {
   border-style: none;
   color: white;
   font-family: 'Roboto', sans-serif;
+}.input:focus {
+    outline: none !important;
+    border:1px solid #ff9100;
 }
+
 
 #submit-btn {
   color: #212121;
@@ -173,9 +191,13 @@ footer {
       text-align: center;
       color: #212121;
       background: #ff9100;
+      box-shadow:inset 0 0 0 0 #ff9100;
+      -webkit-transition: -webkit-box-shadow 300ms ease-in-out;
+      -moz-transition: -moz-box-shadow 300ms ease-in-out;
+      transition: box-shadow 300ms ease-in-out;
     }#nav-logo:hover {
       color: white;
-      background: #b36600;
+      box-shadow:inset 0 100px 0 0 #b36600;
     }
 
     .nav-item {

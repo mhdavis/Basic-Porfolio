@@ -13,10 +13,15 @@ nav {
   border-bottom: 0.1em solid #ff9100;
 }
 
+/*  UTILITY CLASSES
+---------------------------------------*/
 .clearfix {
   clear: both;
   overflow: auto;
 }
+
+/*  NAVIGATION BAR
+---------------------------------------*/
 
 .topnav {
   list-style: none;
@@ -55,6 +60,9 @@ nav {
   box-shadow:inset 0 100px 0 0 #151515;
 }
 
+/*  MAIN CONTAINER / SECTION
+---------------------------------------*/
+
 #container {
   margin: 0px 10%;
 }
@@ -71,10 +79,12 @@ nav {
   border: 0.1em solid #ff9100;
 }
 
-#about-me, #contact-me {
+#about-me, #contact-me, #portfolio-header {
   font-family: 'Knewave', cursive;
 }
 
+/*  ABOUT SECTION
+---------------------------------------*/
 
 #profile-wrapper {
     width: 50%
@@ -97,6 +107,9 @@ nav {
   font-family: 'Roboto', sans-serif;
 }
 
+/*  CONTACT SECTION
+---------------------------------------*/
+
 .contact-row {
   font-size: 1em;
   font-family: 'Knewave', cursive;
@@ -114,7 +127,6 @@ nav {
     border:1px solid #ff9100;
 }
 
-
 #submit-btn {
   color: #212121;
   background: white;
@@ -128,6 +140,56 @@ nav {
 } #submit-btn:hover {
   background-color: #ff9100;
 }
+
+/*  PORTFOLIO SECTION
+---------------------------------------*/
+
+.portfolio-entry {
+  float: left;
+  border-radius: 10px;
+  width: 40%;
+  height: 175px;
+  margin: 1em 1em 1em;
+}
+
+.portfolio-banner {
+  width: auto;
+  height: 65%;
+  background: #6e6d6d;
+  border: 0.1em solid #ff9100;
+  border-radius: 10px 10px 0 0;
+}
+
+.portfolio-info-box {
+  width: auto;
+  height: 35%;
+  background: #ff9100;
+  border: 0.1em solid #ff9100;
+  border-radius: 0 0 10px 10px;
+  font-family: 'Knewave', cursive;
+  font-size: 1.4em;
+  color: #212121;
+  transition: all 1s;
+}
+
+.portfolio-entry-title {
+  margin: 0;
+  padding: 0.4em 0 0 0;
+  text-align: center;
+}
+
+.portfolio-link >
+.portfolio-entry >
+.portfolio-info-box:hover,
+.portfolio-link >
+.portfolio-entry >
+.portfolio-info-box >
+.portfolio-entry-title:hover {
+    color: white;
+}
+
+/*  SOCIAL MEDIA CONTAINER AND BUTTONS
+---------------------------------------*/
 
 #social-media-container {
   color: white;
@@ -160,6 +222,9 @@ nav {
   color: #ff9100;
 }
 
+/*  FOOTER
+---------------------------------------*/
+
 footer {
   text-align: center;
   background: #212121;
@@ -179,6 +244,9 @@ footer {
   font-family: 'Knewave', cursive;
 }
 
+/*  MEDIA QUERIES
+---------------------------------------*/
+
 @media only screen and (max-width: 1000px) {
   #main-section {
     width: 75%;
@@ -191,6 +259,8 @@ footer {
 }
 
 @media only screen and (max-width: 680px) {
+
+  /* NAVBAR */
     #nav-logo {
       padding: 0;
       float: none;
@@ -219,6 +289,12 @@ footer {
       box-shadow:inset 100vw 0 0 0 #151515;
       font-size: 1.5em;
   }
+
+/* PORTFOLIO ENTRIES */
+  .portfolio-entry {
+    width: 80%;
+  }
+
 }
 
 @media only screen and (max-width: 320px) {
